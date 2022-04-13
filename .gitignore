@@ -5,6 +5,7 @@
 logs
 *.log
 npm-debug.log*
+./idea
 
 # Coverage directory used by tools like istanbul
 coverage
