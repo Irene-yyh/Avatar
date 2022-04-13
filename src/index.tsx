@@ -23,7 +23,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
     style: PropTypes.object,
     shape: PropTypes.oneOf(["circle", "rounded", "square"]),
     sex: PropTypes.oneOf(defaultOptions.sex),
-    faceColor: PropTypes.string,
+    faceSize: PropTypes.oneOf(defaultOptions.faceSize),
     earSize: PropTypes.oneOf(defaultOptions.earSize),
     hairColor: PropTypes.string,
     hairStyle: PropTypes.oneOf(
@@ -86,7 +86,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
               width: "100%",
               height: "90%"
             }}>
-            <Face color={config.faceColor} />
+            <Face size={config.faceSize} />
             <Hat
               color={config.hatColor}
               style={config.hatStyle} />
@@ -113,7 +113,7 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
               <Eyebrow style={config.eyeBrowStyle} />
               <Eye style={config.eyeStyle} />
               <Glasses style={config.glassesStyle} />
-              <Ear color={config.faceColor} size={config.earSize} />
+              <Ear color="#AC6651" size={config.earSize} />
               <Nose style={config.noseStyle} />
               <Mouth style={config.mouthStyle} />
             </div>

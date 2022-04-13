@@ -87,8 +87,8 @@ export default class AvatarEditor extends Component {
         <SectionWrapper
           className="w-8 h-8 rounded-full p-2 mx-2"
           tip="Face"
-          switchConfig={this.switchConfig.bind(this, 'faceColor', config.faceColor)}>
-          <Face color={config.faceColor} />
+          switchConfig={this.switchConfig.bind(this, 'faceSize', config.faceSize)}>
+          <Face color="#AC6651" />
         </SectionWrapper>
         {/* Hair style */}
         <SectionWrapper

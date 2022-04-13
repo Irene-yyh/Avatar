@@ -16,10 +16,11 @@ export type NoseStyle = 'short' | 'long' | 'round'
 export type MouthStyle = 'laugh' | 'smile' | 'peace'
 export type ShirtStyle = 'hoody' | 'short' | 'polo'
 export type EyeBrowStyle = 'up' | 'upWoman'
+export type FaceSize = 'thin' | 'big' | 'reg'
 
 export interface AvatarConfig {
   sex?: Sex,
-  faceColor?: string,
+  faceSize?: FaceSize,
   earSize?: EarSize,
   hairColor?: string,
   hairStyle?: HairStyle,
